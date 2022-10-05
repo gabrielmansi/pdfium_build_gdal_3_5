@@ -1,0 +1,13 @@
+diff --git a/BUILD.gn b/BUILD.gn
+index 0cc37ba21..5affd040c 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -19,7 +19,7 @@ config("pdfium_common_config") {
+   cflags = []
+   cflags_cc = []
+   ldflags = []
+-  include_dirs = [ "." ]
++  include_dirs = [ ".", "vs/libjpegturbo/include" ]
+   defines = [
+     "PNG_PREFIX",
+     "PNG_USE_READ_MACROS",
