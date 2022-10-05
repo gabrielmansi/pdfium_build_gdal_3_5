@@ -14,6 +14,7 @@ call gclient sync --revision="%REV%"
 REM Build
 cd pdfium
 call git apply --ignore-whitespace ..\code.patch
+call git apply --ignore-whitespace ..\build.patch
 cd build
 call git apply --ignore-whitespace ..\..\build_win.patch
 cd ..
